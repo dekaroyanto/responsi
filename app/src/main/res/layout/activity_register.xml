@@ -46,16 +46,18 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="40dp"
+            app:cardCornerRadius="25dp"
             android:backgroundTint="@color/white">
 
-            <TextView
+            <EditText
+                android:id="@+id/etuser"
                 android:layout_margin="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masukkan username Anda"
+                android:hint="Masukkan username Anda"
                 android:textSize="8pt"
-                android:textColor="@color/light_gray"/>
+                android:textColor="@color/light_gray"
+                android:background="@color/white"/>
 
         </androidx.cardview.widget.CardView>
 
@@ -73,16 +75,18 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="40dp"
+            app:cardCornerRadius="25dp"
             android:backgroundTint="@color/white">
 
-            <TextView
+            <EditText
+                android:id="@+id/etemail"
                 android:layout_margin="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masukkan email Anda"
+                android:hint="Masukkan email Anda"
                 android:textSize="8pt"
-                android:textColor="@color/light_gray"/>
+                android:textColor="@color/light_gray"
+                android:background="@color/white"/>
 
         </androidx.cardview.widget.CardView>
 
@@ -100,14 +104,17 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="40dp"
+            app:cardCornerRadius="25dp"
             android:backgroundTint="@color/white">
 
-            <TextView
+            <EditText
+                android:id="@+id/etpass"
                 android:layout_margin="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masukkan password Anda"
+                android:hint="Masukkan password Anda"
+                android:inputType="textPassword"
+                android:background="@color/white"
                 android:textSize="8pt"
                 android:textColor="@color/light_gray"/>
 
@@ -127,14 +134,17 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="40dp"
+            app:cardCornerRadius="25dp"
             android:backgroundTint="@color/white">
 
-            <TextView
+            <EditText
+                android:id="@+id/etconfpass"
                 android:layout_margin="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masukkan lagi password Anda"
+                android:hint="Masukkan lagi password Anda"
+                android:inputType="textPassword"
+                android:background="@color/white"
                 android:textSize="8pt"
                 android:textColor="@color/light_gray"/>
 
@@ -153,6 +163,7 @@
         android:layout_marginTop="32dp">
 
         <TextView
+            android:id="@+id/btnregister"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="REGISTER"
@@ -168,6 +179,7 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
+        android:id="@+id/punyaakun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sudah punya akun?"
